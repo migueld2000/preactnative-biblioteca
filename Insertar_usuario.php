@@ -26,7 +26,7 @@ include 'DBConfig.php';
  $S_Contraseña = $obj['Usuario_contraseña'];
  
  // Instrucción SQL para agregar el estudiante.
- $Sql_Query = "insert into usuario (Usuario_nombre,Usuario_telefono,Usuario_correo,Usuario_contraseña) values ('$S_Usuario','$S_Telefono','$S_Correo','$S_Contraseña')";
+ $Sql_Query = "INSERT INTO usuario (Usuario_nombre,Usuario_telefono,Usuario_correo,Usuario_contraseña) values ('$S_Usuario','$S_Telefono','$S_Correo','$S_Contraseña')";
  
  
  if(mysqli_query($con,$Sql_Query)){
